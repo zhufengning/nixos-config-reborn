@@ -29,6 +29,7 @@
     lf
     microfetch
     neovim
+    playerctl
     ripgrep
     silicon
     swww
