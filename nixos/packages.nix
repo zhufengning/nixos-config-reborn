@@ -52,6 +52,9 @@
     waybar
     xdg-desktop-portal-hyprland
 
+    # Appearance
+    adwaita-icon-theme
+
     # Other
     home-manager
   ];
