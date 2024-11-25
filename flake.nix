@@ -20,21 +20,31 @@
 
     let
       system = "x86_64-linux";
+      stateVersion = "24.05";
+      user = "amper";
+      hostname = "slim3";
     in {
 
-    # nixos - system hostname
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      specialArgs = {
-        inherit inputs system;
-      };
-      modules = [
-        ./nixos/configuration.nix
-      ];
-    };
+      # slim3 - system hostname
+      nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit inputs system stateVersion hostname user;
+        };
 
-    homeConfigurations.amper = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
-      modules = [ ./home-manager/home.nix ];
+        modules = [
+          ./nixos/configuration.nix
+        ];
+      };
+
+      homeConfigurations.amper = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${system};
+        extraSpecialArgs = {
+          inherit inputs stateVersion user;
+        };
+
+        modules = [
+          ./home-manager/home.nix
+        ];
+      };
     };
-  };
 }
