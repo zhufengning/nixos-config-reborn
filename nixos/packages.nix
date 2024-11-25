@@ -2,47 +2,57 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    # Packages in each category are sorted alphabetically
+
+    # Desktop apps
+    alacritty
+    blueman
+    chromium
+    discord
+    fuzzel
+    imv
+    jetbrains.pycharm-professional
+    mpv
+    obs-studio
+    obsidian
+    teams-for-linux
+    telegram-desktop
+
+    # CLI utils
+    bottom
+    cliphist
+    ffmpeg
+    git
+    grimblast
+    htop
+    lazygit
+    lf
+    microfetch
+    neovim
+    ripgrep
+    silicon
+    swww
+    tmux
+    tree
+    unzip
     vim
     wget
-    alacritty
-    chromium
-    git
-    neovim
-    wofi
-    swww
-    imv
-    mpv
-    unzip
-    microfetch
-    gcc
-    home-manager
-    prismlauncher
-    telegram-desktop
-    waybar
-    bottom
-    xdg-desktop-portal-hyprland
     wl-clipboard
-    cliphist
-    grimblast
-    obsidian
-    htop
-    lf
-    jetbrains.pycharm-professional
-    python311
-    blueman
-    teams-for-linux
-    silicon
-    tree
-    obs-studio
-    fuzzel
-    tmux
-    ffmpeg
     yt-dlp
-    jre8
-    ripgrep
-    discord
     zip
+
+    # Coding stuff
+    gcc
+    jre8
     nodejs
+    python311
+
+    # WM stuff
+    waybar
+    xdg-desktop-portal-hyprland
+
+    # Other
+    home-manager
   ];
 
   fonts.packages = with pkgs; [
