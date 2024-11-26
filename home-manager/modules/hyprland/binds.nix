@@ -13,7 +13,7 @@
       "$mainMod,       B, exec, pkill -SIGUSR2 waybar"
       "$mainMod SHIFT, B, exec, pkill -SIGUSR1 waybar"
 
-      # configuration files
+      # Configuration files
       "$mainMod SHIFT, R, exec, $terminal -e sh -c 'nh os switch'"
       "$mainMod SHIFT, N, exec, $terminal -e sh -c '$EDITOR $FLAKE/nixos/configuration.nix'"
       "$mainMod SHIFT, H, exec, $terminal -e sh -c '$EDITOR ~/.config/hypr/hyprland.conf'"
