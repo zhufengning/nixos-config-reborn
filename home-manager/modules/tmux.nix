@@ -7,7 +7,7 @@
     terminal = "screen-256color";
     extraConfig = ''
       set -as terminal-features ",alacritty*:RGB"
-      bind -n M-r source-file /nix/store/*tmuxtmux.conf \; display "Reloaded!"
+      bind -n M-r source-file ~/.config/tmux/tmux.conf \; display "Reloaded!"
       bind C-p previous-window
       bind C-n next-window
 
@@ -21,17 +21,18 @@
       bind -n M-8 select-window -t 8
       bind -n M-9 select-window -t 9
 
-      bind -n M-h select-pane -L
-      bind -n M-j select-pane -D
-      bind -n M-k select-pane -U
-      bind -n M-l select-pane -R
+      bind -n M-Left select-pane -L
+      bind -n M-Right select-pane -R
+      bind -n M-Up select-pane -U
+      bind -n M-Down select-pane -D
 
       bind -n M-s split-window -v
       bind -n M-v split-window -h
 
       bind -n M-Enter new-window
-      bind -n M-c kill-window
-      bind -n M-q kill-session
+      bind -n M-c kill-pane
+      bind -n M-q kill-window
+      bind -n M-Q kill-session
     '';
     plugins = with pkgs; [
       tmuxPlugins.cpu
