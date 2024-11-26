@@ -1,6 +1,7 @@
 {
   imports = [
     ./cursor.nix
+    ./starship.nix
     ./git.nix
     ./hyprland
     ./zsh.nix

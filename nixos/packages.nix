@@ -32,6 +32,7 @@
     playerctl
     ripgrep
     silicon
+    starship
     swww
     tmux
     tree
