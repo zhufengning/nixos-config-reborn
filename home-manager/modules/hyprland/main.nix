@@ -11,7 +11,7 @@
       exec-once = [
         "swww-daemon"
         "swww img ~/Downloads/wp.png"
-        "sleep 5 && waybar -c ~/.config/waybar/config.json"
+        "sleep 5 && waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
       ];

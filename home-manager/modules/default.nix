@@ -5,5 +5,6 @@
     ./hyprland
     ./zsh.nix
     ./tmux.nix
+    ./waybar
   ];
 }
