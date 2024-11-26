@@ -12,6 +12,8 @@
         modules-right = ["hyprland/language" "custom/weather" "pulseaudio" "battery" "clock" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
+          show-special = true;
+          special-visible-only = true;
           all-outputs = false;
           format = "{icon}";
           format-icons = {
@@ -24,6 +26,7 @@
             "7" = "";
             "8" = "";
             "9" = "";
+            "magic" = "";
           };
 
           persistent-workspaces = {
