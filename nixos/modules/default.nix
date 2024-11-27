@@ -9,6 +9,7 @@
     ./mime.nix
     ./net.nix
     ./nh.nix
+    ./stylix.nix
     ./timezone.nix
     ./user.nix
     ./zram.nix
