@@ -1,6 +1,7 @@
 {
   imports = [
     ./alacritty.nix
+    ./eza.nix
     ./cursor.nix
     ./starship.nix
     ./fuzzel.nix
