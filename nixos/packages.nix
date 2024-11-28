@@ -20,6 +20,7 @@
 
     # CLI utils
     bottom
+    brightnessctl
     cliphist
     ffmpeg
     git
