@@ -12,7 +12,6 @@
       sw = "nh os switch";
       upd = "nh os switch --update";
       upg = "nh os switch";
-
       hms = "nh home switch";
 
       pkgs = "nvim ${flakeDir}/nixos/packages.nix";
@@ -25,15 +24,18 @@
       ga = "git add";
       gc = "git commit";
       gp = "git push";
+
+      ".." = "cd ..";
     };
 
     history.size = 10000;
     history.path = "${config.xdg.dataHome}/zsh/history";
 
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ "git" "sudo" ];
-      theme = "agnoster"; # blinks is also really nice
-    };
+    # Not needed since I'm using starship
+    # oh-my-zsh = {
+    #   enable = true;
+    #   plugins = [ "git" "sudo" ];
+    #   theme = "agnoster"; # blinks is also really nice
+    # };
   };
 }
