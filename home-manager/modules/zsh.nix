@@ -15,13 +15,16 @@
 
       hms = "nh home switch";
 
-      conf = "nvim ${flakeDir}/nixos/configuration.nix";
       pkgs = "nvim ${flakeDir}/nixos/packages.nix";
 
-      ll = "ls -l";
       v = "nvim";
       se = "sudoedit";
       microfetch = "microfetch && echo";
+
+      gs = "git status";
+      ga = "git add";
+      gc = "git commit";
+      gp = "git push";
     };
 
     history.size = 10000;
