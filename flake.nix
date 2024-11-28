@@ -38,7 +38,7 @@
         ];
       };
 
-      homeConfigurations.amper = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = {
           inherit inputs stateVersion user;
