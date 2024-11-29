@@ -38,11 +38,10 @@
     };
 
   in {
-    nixosConfigurations = {
-      ${builtins.elemAt hosts 0} = makeSystem {
-        hostname = builtins.elemAt hosts 0;
-      };
-    };
+  nixosConfigurations = nixpkgs.lib.foldl' (configs: hostname:
+    configs // {
+      "${hostname}" = makeSystem { inherit hostname; };
+    }) {} hosts;
 
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
