@@ -1,5 +1,6 @@
 {
   imports = [
+    ./neovim.nix
     ./alacritty.nix
     ./eza.nix
     ./cursor.nix
