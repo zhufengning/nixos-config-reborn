@@ -18,37 +18,41 @@
     #};
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: let
+    system = "x86_64-linux";
+    stateVersion = "24.05";
+    user = "amper";
+    hosts = [
+      "slim3"
+    ];
 
-    let
-      system = "x86_64-linux";
-      stateVersion = "24.05";
-      user = "amper";
-      hostname = "slim3";
-    in {
-
-      # slim3 - system hostname
-      nixosConfigurations = {
-        ${hostname} = nixpkgs.lib.nixosSystem {
-          specialArgs = {
-            inherit inputs system stateVersion hostname user;
-          };
-
-          modules = [
-            ./hosts/${hostname}/configuration.nix
-          ];
-        };
+    makeSystem = { hostname }: nixpkgs.lib.nixosSystem {
+      system = system;
+      specialArgs = {
+        inherit inputs stateVersion hostname user;
       };
 
-      homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = {
-          inherit inputs stateVersion user;
-        };
+      modules = [
+        ./hosts/${hostname}/configuration.nix
+      ];
+    };
 
-        modules = [
-          ./home-manager/home.nix
-        ];
+  in {
+    nixosConfigurations = {
+      ${builtins.elemAt hosts 0} = makeSystem {
+        hostname = builtins.elemAt hosts 0;
       };
     };
+
+    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.${system};
+      extraSpecialArgs = {
+        inherit inputs stateVersion user;
+      };
+
+      modules = [
+        ./home-manager/home.nix
+      ];
+    };
+  };
 }
