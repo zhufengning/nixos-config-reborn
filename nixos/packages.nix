@@ -8,7 +8,6 @@
     alacritty
     blueman
     chromium
-    discord
     fuzzel
     imv
     jetbrains.pycharm-professional
@@ -17,6 +16,7 @@
     obsidian
     teams-for-linux
     telegram-desktop
+    vesktop
 
     # CLI utils
     bottom
