@@ -28,14 +28,16 @@
     in {
 
       # slim3 - system hostname
-      nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
-        specialArgs = {
-          inherit inputs system stateVersion hostname user;
-        };
+      nixosConfigurations = {
+        ${hostname} = nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs system stateVersion hostname user;
+          };
 
-        modules = [
-          ./nixos/configuration.nix
-        ];
+          modules = [
+            ./hosts/${hostname}/configuration.nix
+          ];
+        };
       };
 
       homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
