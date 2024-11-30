@@ -9,24 +9,23 @@
       let
         flakeDir = "~/flake";
       in {
-      sw = "nh os switch";
-      upd = "nh os switch --update";
-      upg = "nh os switch";
-      hms = "nh home switch";
+        sw = "nh os switch";
+        upd = "nh os switch --update";
+        hms = "nh home switch";
 
-      pkgs = "nvim ${flakeDir}/nixos/packages.nix";
+        pkgs = "nvim ${flakeDir}/nixos/packages.nix";
 
-      v = "nvim";
-      se = "sudoedit";
-      microfetch = "microfetch && echo";
+        v = "nvim";
+        se = "sudoedit";
+        microfetch = "microfetch && echo";
 
-      gs = "git status";
-      ga = "git add";
-      gc = "git commit";
-      gp = "git push";
+        gs = "git status";
+        ga = "git add";
+        gc = "git commit";
+        gp = "git push";
 
-      ".." = "cd ..";
-    };
+        ".." = "cd ..";
+      };
 
     history.size = 10000;
     history.path = "${config.xdg.dataHome}/zsh/history";
