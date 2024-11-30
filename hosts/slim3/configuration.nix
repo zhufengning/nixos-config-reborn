@@ -5,6 +5,7 @@
     [
       ./hardware-configuration.nix
       ../../nixos/packages.nix
+      ./local-packages.nix
       ../../nixos/modules
     ];
 

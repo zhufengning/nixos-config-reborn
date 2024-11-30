@@ -10,7 +10,6 @@
     chromium
     fuzzel
     imv
-    jetbrains.pycharm-professional
     mpv
     obs-studio
     obsidian
@@ -45,17 +44,12 @@
     zip
 
     # Coding stuff
-    gcc
-    jre8
     nodejs
     python311
 
     # WM stuff
     waybar
     xdg-desktop-portal-hyprland
-
-    # Appearance
-    adwaita-icon-theme
 
     # Other
     home-manager
