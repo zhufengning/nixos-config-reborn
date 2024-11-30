@@ -20,7 +20,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: let
     system = "x86_64-linux";
-    stateVersion = "24.05";
+    homeStateVersion = "24.11";
     user = "amper";
     hosts = [
       { hostname = "slim3"; stateVersion = "24.05"; }
@@ -48,7 +48,7 @@
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       extraSpecialArgs = {
-        inherit inputs stateVersion user;
+        inherit inputs homeStateVersion user;
       };
 
       modules = [
