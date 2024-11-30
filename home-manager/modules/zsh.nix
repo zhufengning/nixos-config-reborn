@@ -30,5 +30,12 @@
 
     history.size = 10000;
     history.path = "${config.xdg.dataHome}/zsh/history";
+
+    initExtra = ''
+      # Start Tmux automatically if not already running
+      if [ -z "$TMUX" ]; then
+        tmux attach-session -t default || tmux new-session -s default
+      fi
+    '';
   };
 }
