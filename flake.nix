@@ -23,10 +23,10 @@
     stateVersion = "24.05";
     user = "amper";
     hosts = [
-      "slim3"
+      { hostname = "slim3"; stateVersion = "24.05"; }
     ];
 
-    makeSystem = { hostname }: nixpkgs.lib.nixosSystem {
+    makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
       system = system;
       specialArgs = {
         inherit inputs stateVersion hostname user;
@@ -38,10 +38,12 @@
     };
 
   in {
-  nixosConfigurations = nixpkgs.lib.foldl' (configs: hostname:
-    configs // {
-      "${hostname}" = makeSystem { inherit hostname; };
-    }) {} hosts;
+    nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
+      configs // {
+        "${host.hostname}" = makeSystem {
+          inherit (host) hostname stateVersion;
+        };
+      }) {} hosts;
 
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
