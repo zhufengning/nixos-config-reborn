@@ -3,7 +3,7 @@
     enable = true;
     extraPackages = with pkgs; [
       lua-language-server
-      vscode-langservers-extracted
+      python311Packages.python-lsp-server
       nixd
     ];
   };
