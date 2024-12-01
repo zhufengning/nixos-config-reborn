@@ -50,6 +50,7 @@
     # WM stuff
     waybar
     xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
 
     # Other
     home-manager
