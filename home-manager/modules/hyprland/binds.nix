@@ -12,6 +12,7 @@
       "$mainMod,       V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
       "$mainMod,       B, exec, pkill -SIGUSR2 waybar"
       "$mainMod SHIFT, B, exec, pkill -SIGUSR1 waybar"
+      "$mainMod,       L, exec, loginctl lock-session"
 
       # Configuration files
       "$mainMod SHIFT, R, exec, $terminal -e sh -c 'nh os switch'"
