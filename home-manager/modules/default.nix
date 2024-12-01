@@ -8,6 +8,7 @@
     ./hyprland
     ./neovim.nix
     ./starship.nix
+    ./swaync.nix
     ./tmux.nix
     ./waybar
     ./zsh.nix
