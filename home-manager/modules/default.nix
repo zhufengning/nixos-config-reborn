@@ -1,15 +1,15 @@
 {
   imports = [
-    ./neovim.nix
     ./alacritty.nix
-    ./eza.nix
     ./cursor.nix
-    ./starship.nix
+    ./eza.nix
     ./fuzzel.nix
     ./git.nix
     ./hyprland
-    ./zsh.nix
+    ./neovim.nix
+    ./starship.nix
     ./tmux.nix
     ./waybar
+    ./zsh.nix
   ];
 }
