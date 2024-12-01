@@ -54,7 +54,7 @@
         "bordersize 0, floating:0, onworkspace:w[t1]"
         "float,class:(mpv)|(imv)"
         "workspace 3,class:(obsidian)"
-        "workspace 4,class:(com.obsproject.S"
+        "workspace 4,class:(com.obsproject.Studio)"
         "workspace 5,class:(telegram)"
         "workspace 6,class:(teams-for-linux)"
         "suppressevent maximize, class:.*"
