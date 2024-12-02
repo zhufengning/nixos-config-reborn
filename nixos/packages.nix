@@ -48,6 +48,7 @@
     python311
 
     # WM stuff
+    hyprpicker
     libsForQt5.xwaylandvideobridge
     libnotify
     waybar
