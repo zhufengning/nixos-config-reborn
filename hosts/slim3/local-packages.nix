@@ -3,5 +3,7 @@
     jetbrains.pycharm-professional
     gcc
     jre8
+    qemu
+    quickemu
   ];
 }
