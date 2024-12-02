@@ -9,10 +9,11 @@
       "$mainMod,       D, exec, $menu"
       "$mainMod,       P, pseudo,"
       "$mainMod,       J, togglesplit,"
-      "$mainMod,       V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
+      "$mainMod,       V, exec, cliphist list | $menu --dmenu | cliphist decode | wl-copy"
       "$mainMod,       B, exec, pkill -SIGUSR2 waybar"
       "$mainMod SHIFT, B, exec, pkill -SIGUSR1 waybar"
       "$mainMod,       L, exec, loginctl lock-session"
+      "$mainMod,       P, exec, hyprpicker -an"
 
       # Configuration files
       "$mainMod SHIFT, R, exec, $terminal -e sh -c 'nh os switch'"
