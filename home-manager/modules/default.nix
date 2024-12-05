@@ -6,6 +6,7 @@
     ./fuzzel.nix
     ./git.nix
     ./hyprland
+    ./lazygit.nix
     ./neovim.nix
     ./starship.nix
     ./swaync.nix
