@@ -56,6 +56,7 @@
     xdg-desktop-portal-hyprland
 
     # Other
+    bemoji
     home-manager
   ];
 
