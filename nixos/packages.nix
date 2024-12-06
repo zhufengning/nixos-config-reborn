@@ -16,6 +16,7 @@
     teams-for-linux
     telegram-desktop
     vesktop
+    wofi
 
     # CLI utils
     bottom
