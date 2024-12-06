@@ -20,7 +20,7 @@
       "$mainMod SHIFT, N, exec, $terminal -e sh -c '$EDITOR $FLAKE/nixos/configuration.nix'"
       "$mainMod SHIFT, H, exec, $terminal -e sh -c '$EDITOR ~/.config/hypr/hyprland.conf'"
       "$mainMod SHIFT, W, exec, $terminal -e sh -c '$EDITOR ~/.config/waybar/config.json'"
-      ", Print, exec, grimblast copysave area"
+      ", Print, exec, grimblast --notify --freeze copysave area"
 
       # Moving focus
       "$mainMod, left, movefocus, l"
