@@ -12,6 +12,7 @@
 
     stylix.url = "github:danth/stylix";
 
+    # COMING SOON...
     #nixvim = {
     #  url = "github:nix-community/nixvim";
     #  inputs.nixpkgs.follows = "nixpkgs";
