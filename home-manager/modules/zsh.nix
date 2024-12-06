@@ -32,7 +32,7 @@
 
     initExtra = ''
       # Start Tmux automatically if not already running
-      if [ -z "$TMUX" ]; then
+      if [ -z "$TMUX" ] && [ -n "$DISPLAY" ]; then
         tmux attach-session -t default || tmux new-session -s default
       fi
     '';
