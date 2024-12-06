@@ -8,6 +8,7 @@
     ./hyprland
     ./lazygit.nix
     ./neovim.nix
+    ./obsidian.nix
     ./starship.nix
     ./swaync.nix
     ./tmux.nix
