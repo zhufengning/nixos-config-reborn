@@ -40,6 +40,7 @@
     vim
     wget
     wl-clipboard
+    wtype
     yt-dlp
     zip
 
