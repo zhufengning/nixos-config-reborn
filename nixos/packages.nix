@@ -31,6 +31,7 @@
     microfetch
     neovim
     playerctl
+    ranger
     ripgrep
     silicon
     starship
