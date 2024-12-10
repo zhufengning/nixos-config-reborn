@@ -4,7 +4,7 @@
       "$mainMod SHIFT, Return, exec, $terminal"
       "$mainMod SHIFT, C, killactive,"
       "$mainMod SHIFT, Q, exit,"
-      # "$mainMod,       E, exec, $fileManager"
+      "$mainMod,       R, exec, $fileManager"
       "$mainMod,       F, togglefloating,"
       "$mainMod,       D, exec, $menu"
       "$mainMod,       P, pseudo,"
