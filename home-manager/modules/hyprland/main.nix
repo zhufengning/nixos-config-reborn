@@ -20,8 +20,6 @@
       "$menu" = "fuzzel";
 
       exec-once = [
-        "swww-daemon"
-        "swww img ~/Downloads/wp.png"
         "sleep 5 && waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
