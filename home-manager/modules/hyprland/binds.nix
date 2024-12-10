@@ -15,12 +15,6 @@
       "$mainMod SHIFT, B, exec, pkill -SIGUSR1 waybar"
       "$mainMod,       L, exec, loginctl lock-session"
       "$mainMod,       P, exec, hyprpicker -an"
-
-      # Configuration files
-      "$mainMod SHIFT, R, exec, $terminal -e sh -c 'nh os switch'"
-      "$mainMod SHIFT, N, exec, $terminal -e sh -c '$EDITOR $FLAKE/nixos/configuration.nix'"
-      "$mainMod SHIFT, H, exec, $terminal -e sh -c '$EDITOR ~/.config/hypr/hyprland.conf'"
-      "$mainMod SHIFT, W, exec, $terminal -e sh -c '$EDITOR ~/.config/waybar/config.json'"
       ", Print, exec, grimblast --notify --freeze copysave area"
 
       # Moving focus
