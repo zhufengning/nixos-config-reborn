@@ -20,7 +20,7 @@
       "$menu" = "fuzzel";
 
       exec-once = [
-        "sleep 5 && waybar"
+        "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
       ];
