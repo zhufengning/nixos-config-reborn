@@ -24,6 +24,7 @@
     cliphist
     ffmpeg
     git
+    git-graph
     grimblast
     htop
     lazygit
