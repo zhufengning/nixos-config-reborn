@@ -34,6 +34,7 @@
     playerctl
     ranger
     ripgrep
+    showmethekey
     silicon
     starship
     swww
