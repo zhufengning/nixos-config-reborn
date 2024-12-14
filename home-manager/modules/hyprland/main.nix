@@ -17,7 +17,7 @@
       "$mainMod" = "SUPER";
       "$terminal" = "alacritty";
       "$fileManager" = "$terminal -e sh -c 'ranger'";
-      "$menu" = "fuzzel";
+      "$menu" = "wofi";
 
       exec-once = [
         "waybar"

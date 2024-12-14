@@ -23,7 +23,7 @@ in {
       "$mainMod SHIFT, Q, exit,"
       "$mainMod,       R, exec, $fileManager"
       "$mainMod,       F, togglefloating,"
-      "$mainMod,       D, exec, $menu"
+      "$mainMod,       D, exec, $menu --show drun"
       "$mainMod,       P, pseudo,"
       "$mainMod,       J, togglesplit,"
       "$mainMod,       E, exec, bemoji -c"
