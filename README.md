@@ -8,12 +8,12 @@ You can still find my old configuration [here](https://github.com/Andrey0189/nix
 
 ## ✨ Features
 
-- **Multiple Hosts Support**: Easy to configure for different hosts.
-- **Gruvbox Theme**: A perfect blend of vibrant and subtle colors.
-- **Hyprland + Waybar**: 10/10 window compositor on Wayland.
-- **Home Manager Integration**: lots of stuff configured.
-- **Tmux**: with my own hotkeys.
-- **Zsh + starship**: Efficient shell setup with lots of aliases.
+- 🖥️ **Multiple Hosts Support**: Easy to configure for different hosts.
+- 🎨 **Gruvbox Theme**: A perfect blend of vibrant and subtle colors.
+- 🪟 **Hyprland + Waybar**: 10/10 window compositor on Wayland.
+- 🏠 **Home Manager Integration**: lots of stuff configured.
+- 🧇 **Tmux**: with my own hotkeys.
+- 🌟 **Zsh + starship**: Efficient shell setup with lots of aliases.
 
 ## 🚀 Installation
 
