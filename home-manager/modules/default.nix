@@ -14,6 +14,7 @@
     ./tmux.nix
     ./waybar
     ./wofi
+    ./zathura.nix
     ./zsh.nix
   ];
 }
