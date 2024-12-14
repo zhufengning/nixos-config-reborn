@@ -10,7 +10,7 @@
     ./neovim.nix
     ./obsidian.nix
     ./starship.nix
-    ./swaync.nix
+    ./swaync
     ./tmux.nix
     ./waybar
     ./zsh.nix

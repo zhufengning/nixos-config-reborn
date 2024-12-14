@@ -20,5 +20,5 @@
     };
   };
 
-  home.file.".config/swaync.style.css" = ./style.css;
+  home.file.".config/swaync/style.css".source = ./style.css;
 }
