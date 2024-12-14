@@ -9,6 +9,18 @@
         no_fade_in = false;
       };
 
+      label = {
+        text = "$TIME";
+        font_size = 96;
+        font_family = "JetBrains Mono";
+        color = "rgba(235, 219, 178, 1.0)";
+        position = "0, 600";
+        halign = "center";
+        walign = "center";
+
+        shadow_passes = 1;
+      };
+
       background = [
         {
           path = "screenshot";
