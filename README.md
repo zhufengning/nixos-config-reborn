@@ -4,6 +4,8 @@ Welcome to my redesigned NixOS configuration built for efficiency and aesthetics
 
 ![screenshot](./screenshots/screenshot1.png)
 
+You can still find my old configuration [here](https://github.com/Andrey0189/nixos-config)
+
 ## ✨ Features
 
 - **Multiple Hosts Support**: Easy to configure for different hosts.
