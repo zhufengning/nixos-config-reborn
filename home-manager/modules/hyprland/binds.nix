@@ -1,21 +1,4 @@
-{ pkgs, ... }:
-let
-  gamemode = pkgs.writeShellScriptBin "gamemode" ''
-    #!/bin/sh
-    HYPRGAMEMODE=$(hyprctl getoption animations:enabled | awk 'NR==1{print $2}')
-    if [ "$HYPRGAMEMODE" = 1 ] ; then
-        hyprctl --batch "\
-            keyword animations:enabled 0;\
-            keyword decoration:shadow:enabled 0;\
-            keyword decoration:blur:enabled 0;\
-            keyword general:gaps_in 0;\
-            keyword general:gaps_out 0;\
-            keyword decoration:rounding 0"
-        exit
-    fi
-    hyprctl reload
-  '';
-in {
+{
   wayland.windowManager.hyprland.settings = {
     bind = [
       "$mainMod SHIFT, Return, exec, $terminal"
@@ -32,7 +15,7 @@ in {
       "$mainMod SHIFT, B, exec, pkill -SIGUSR1 waybar"
       "$mainMod,       L, exec, loginctl lock-session"
       "$mainMod,       P, exec, hyprpicker -an"
-      "$mainMod,       G, exec, ${gamemode}/bin/gamemode"
+      "$mainMod,       N, exec, swaync-client -t"
       ", Print, exec, grimblast --notify --freeze copysave area"
 
       # Moving focus
