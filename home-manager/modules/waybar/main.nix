@@ -34,7 +34,6 @@
           };
         };
 
-
         "hyprland/language" = {
           format-en = "🇺🇸";
           format-ru = "🇷🇺";
@@ -47,27 +46,6 @@
           exec = "curl -s 'wttr.in/Tashkent?format=%c%t'";
           interval = 300;
           class = "weather";
-        };
-
-        "battery" = {
-          states = {
-            warning = 30;
-            critical = 1;
-          };
-          format = "{icon} {capacity}%";
-          format-charging = " {capacity}%";
-          format-alt = "{time} {icon}";
-          format-icons = ["" "" "" "" ""];
-        };
-
-        "tray" = {
-          icon-size = 14;
-          spacing = 1;
-        };
-
-        "clock" = {
-          format = "{:%d.%m.%Y - %H:%M}";
-          format-alt = "{:%A, %B %d at %R}";
         };
 
         "pulseaudio" = {
@@ -84,6 +62,27 @@
             "default" = ["" ""];
           };
           on-click = "pavucontrol";
+        };
+
+        "battery" = {
+          states = {
+            warning = 30;
+            critical = 1;
+          };
+          format = "{icon} {capacity}%";
+          format-charging = " {capacity}%";
+          format-alt = "{time} {icon}";
+          format-icons = ["" "" "" "" ""];
+        };
+
+        "clock" = {
+          format = "{:%d.%m.%Y - %H:%M}";
+          format-alt = "{:%A, %B %d at %R}";
+        };
+
+        "tray" = {
+          icon-size = 14;
+          spacing = 1;
         };
       };
     };
