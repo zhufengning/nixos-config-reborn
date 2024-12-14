@@ -128,6 +128,7 @@
         "noborder,nofocus,class:(showmethekey-gtk)"
 
         "workspace 3,class:(obsidian)"
+        "workspace 3,class:(zathura)"
         "workspace 4,class:(com.obsproject.Studio)"
         "workspace 5,class:(telegram)"
         "workspace 5,class:(vesktop)"
