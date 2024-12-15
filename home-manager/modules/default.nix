@@ -9,7 +9,9 @@
     ./lazygit.nix
     ./neovim.nix
     ./obsidian.nix
+    ./qt.nix
     ./starship.nix
+    # ./stylix.nix
     ./swaync
     ./tmux.nix
     ./waybar
