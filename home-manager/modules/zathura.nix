@@ -7,8 +7,7 @@
       u = "scroll half_up";
     };
     options = {
-      default-bg = "#282828";
-      default-fg = "#ebdbb2";
+
     };
   };
 }

@@ -1,7 +1,6 @@
 {
   imports = [
     ./alacritty.nix
-    ./cursor.nix
     ./eza.nix
     ./git.nix
     ./hyprland
@@ -9,7 +8,7 @@
     ./neovim.nix
     ./obsidian.nix
     ./starship.nix
-    # ./stylix.nix
+    ./stylix.nix
     ./swaync
     ./tmux.nix
     ./waybar
