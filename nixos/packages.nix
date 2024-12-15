@@ -5,10 +5,7 @@
     # Packages in each category are sorted alphabetically
 
     # Desktop apps
-    alacritty
-    blueman
     chromium
-    fuzzel
     imv
     mpv
     obs-studio
@@ -16,32 +13,22 @@
     teams-for-linux
     telegram-desktop
     vesktop
-    wofi
 
     # CLI utils
     bottom
     brightnessctl
     cliphist
     ffmpeg
-    git
     git-graph
     grimblast
     htop
-    lazygit
-    lf
     microfetch
-    neovim
     playerctl
     ranger
     ripgrep
     showmethekey
     silicon
-    starship
-    swww
-    tmux
-    tree
     unzip
-    vim
     wget
     wl-clipboard
     wtype
@@ -53,10 +40,8 @@
     python311
 
     # WM stuff
-    hyprpicker
     libsForQt5.xwaylandvideobridge
     libnotify
-    waybar
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
 
