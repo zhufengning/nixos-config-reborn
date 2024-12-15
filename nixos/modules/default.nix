@@ -10,8 +10,6 @@
     ./net.nix
     ./nh.nix
     ./nix.nix
-    # ./qt.nix
-    # ./stylix.nix
     ./timezone.nix
     ./user.nix
     ./zram.nix
