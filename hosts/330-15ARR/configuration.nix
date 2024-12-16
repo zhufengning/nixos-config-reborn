@@ -1,13 +1,13 @@
-{ stateVersion, hostname, ... }:
+{ pkgs, stateVersion, hostname, ... }:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-      ../../nixos/packages.nix
-      ./local-packages.nix
-      ../../nixos/modules
-    ];
+  imports = [
+    ./hardware-configuration.nix
+    ./local-packages.nix
+    ../../nixos/modules
+  ];
+
+  environment.systemPackages = [ pkgs.home-manager ];
 
   networking.hostName = hostname;
 
