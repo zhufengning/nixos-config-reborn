@@ -23,7 +23,6 @@
     htop
     microfetch
     playerctl
-    ranger
     ripgrep
     showmethekey
     silicon

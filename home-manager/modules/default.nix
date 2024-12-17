@@ -8,6 +8,7 @@
     ./lazygit.nix
     ./neovim.nix
     ./obsidian.nix
+    ./ranger.nix
     ./starship.nix
     ./stylix.nix
     ./swaync
