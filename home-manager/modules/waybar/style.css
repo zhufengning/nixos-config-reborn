@@ -50,7 +50,7 @@ window#waybar {
 #pulseaudio.muted {
   padding: 0 20px;
   color: #cc241d;
-  border-bottom: 4px solid #cc241d;
+  border-bottom: 5px solid #cc241d;
 }
 
 #battery {
