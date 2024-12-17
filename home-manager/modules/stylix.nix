@@ -2,6 +2,7 @@
   imports = [ inputs.stylix.homeManagerModules.stylix ];
 
   home.packages = with pkgs; [
+    dejavu_fonts
     jetbrains-mono
     noto-fonts
     noto-fonts-emoji
