@@ -3,11 +3,22 @@
     enable = true;
     mappings = {
       e = "edit";
+
+      ec = "compress";
+      ex = "extract";
+
+      b = "fzm";
+
+
     };
 
     settings = {
-      default_linemode = "devicons2";
+      # default_linemode = "devicons2";
     };
+
+    extraConfig = ''
+      default_linemode devicons2
+    '';
 
     plugins = [
       {
@@ -26,6 +37,24 @@
           rev = "94bdcc19218681debb252475fd9d11cfd274d9b1";
         };
       }
+      {
+        name = "ranger_tmux";
+        src = builtins.fetchGit {
+          url = "https://github.com/joouha/ranger_tmux";
+          ref = "master";
+          rev = "05ba5ddf2ce5659a90aa0ada70eb1078470d972a";
+        };
+      }
+      {
+        name = "ranger_udisk_menu";
+        src = builtins.fetchGit {
+          url = "https://github.com/SL-RU/ranger_udisk_menu";
+          ref = "master";
+          rev = "c892d447177051dd2fa97e2387b2d04bf8977de7";
+        };
+      }
     ];
   };
+
+  home.file.".config/ranger/commands.py".text = "from plugins.ranger_udisk_menu.mounter import mount";
 }
