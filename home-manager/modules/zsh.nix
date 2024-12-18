@@ -15,6 +15,7 @@
 
         pkgs = "nvim ${flakeDir}/nixos/packages.nix";
 
+        r = "ranger";
         v = "nvim";
         se = "sudoedit";
         microfetch = "microfetch && echo";
