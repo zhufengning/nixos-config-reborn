@@ -18,15 +18,20 @@
     brightnessctl
     cliphist
     ffmpeg
+    ffmpegthumbnailer
+    fzf
     git-graph
     grimblast
     htop
+    mediainfo
     microfetch
     playerctl
     ripgrep
     showmethekey
     silicon
+    udisks
     unzip
+    w3m
     wget
     wl-clipboard
     wtype
@@ -45,5 +50,6 @@
 
     # Other
     bemoji
+    nix-prefetch-scripts
   ];
 }
