@@ -8,12 +8,13 @@
       ex = "extract";
 
       b = "fzm";
-
-
     };
 
     settings = {
-      # default_linemode = "devicons2";
+      preview_images = true;
+      preview_images_method = "ueberzug";
+      draw_borders = true;
+      w3m_delay = 0;
     };
 
     extraConfig = ''
@@ -43,14 +44,6 @@
           url = "https://github.com/joouha/ranger_tmux";
           ref = "master";
           rev = "05ba5ddf2ce5659a90aa0ada70eb1078470d972a";
-        };
-      }
-      {
-        name = "ranger_udisk_menu";
-        src = builtins.fetchGit {
-          url = "https://github.com/SL-RU/ranger_udisk_menu";
-          ref = "master";
-          rev = "c892d447177051dd2fa97e2387b2d04bf8977de7";
         };
       }
     ];
