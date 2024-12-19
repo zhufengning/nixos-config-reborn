@@ -30,6 +30,7 @@
     showmethekey
     silicon
     udisks
+    ueberzugpp
     unzip
     w3m
     wget
