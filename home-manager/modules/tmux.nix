@@ -27,9 +27,17 @@
       bind -n M-Up select-pane -U
       bind -n M-Down select-pane -D
 
+      bind -n M-S-Left resize-pane -L 5
+      bind -n M-S-Right resize-pane -R 5
+      bind -n M-S-Up resize-pane -U 3
+      bind -n M-S-Down resize-pane -D 3
+
       bind -n M-s split-window -v
       bind -n M-v split-window -h
 
+      bind -n M-o new-window -c ~/para "nvim -c 'Telescope find_files' '0 Inbox/todolist.md'"
+      bind -n M-f new-window -c ~/flake "nvim -c 'Telescope find_files' flake.nix"
+      bind -n M-n new-window -c ~/.config/nvim "nvim -c 'Telescope find_files' init.lua"
       bind -n M-Enter new-window
       bind -n M-c kill-pane
       bind -n M-q kill-window
