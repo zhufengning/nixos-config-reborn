@@ -7,7 +7,7 @@
       "$mainMod,       R, exec, $fileManager"
       "$mainMod,       F, togglefloating,"
       "$mainMod,       D, exec, $menu --show drun"
-      "$mainMod,       P, pseudo,"
+      "$mainMod,       P, pin,"
       "$mainMod,       J, togglesplit,"
       "$mainMod,       E, exec, bemoji -cn"
       "$mainMod,       V, exec, cliphist list | $menu --dmenu | cliphist decode | wl-copy"
