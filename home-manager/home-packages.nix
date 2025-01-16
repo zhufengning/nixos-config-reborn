@@ -15,6 +15,7 @@
     vesktop
 
     # CLI utils
+    bc
     bottom
     brightnessctl
     cliphist
