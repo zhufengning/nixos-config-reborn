@@ -24,6 +24,7 @@
     git-graph
     grimblast
     htop
+    ntfs3g
     mediainfo
     microfetch
     playerctl
