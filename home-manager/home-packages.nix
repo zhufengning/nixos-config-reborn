@@ -44,6 +44,7 @@
     zip
 
     # Coding stuff
+    openjdk23
     nodejs
     python311
 
