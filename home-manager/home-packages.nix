@@ -26,6 +26,7 @@
     git-graph
     grimblast
     htop
+    hyprpicker
     ntfs3g
     mediainfo
     microfetch
