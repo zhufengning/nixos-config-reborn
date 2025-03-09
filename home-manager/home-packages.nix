@@ -6,6 +6,7 @@
 
     # Desktop apps
     anki
+    code-cursor
     imv
     mpv
     obs-studio
