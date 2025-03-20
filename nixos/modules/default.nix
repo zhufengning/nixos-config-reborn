@@ -14,5 +14,9 @@
     ./timezone.nix
     ./user.nix
     ./zram.nix
+    ./nm-applet.nix
+    ./nvim.nix
+    ./v2raya.nix
+    ./fcitx5.nix
   ];
 }

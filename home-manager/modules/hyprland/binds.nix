@@ -20,13 +20,13 @@ in {
   wayland.windowManager.hyprland.settings = {
     bind = [
       "$mainMod SHIFT, Return, exec, $terminal"
-      "$mainMod SHIFT, C, killactive,"
-      "$mainMod SHIFT, Q, exit,"
+      "$mainMod SHIFT, Q, killactive,"
+      "$mainMod SHIFT, C, exit,"
       "$mainMod,       R, exec, $fileManager"
       "$mainMod,       F, togglefloating,"
       "$mainMod,       D, exec, $menu --show drun"
       "$mainMod,       P, pin,"
-      "$mainMod,       J, togglesplit,"
+      "$mainMod,       J, togglegroup"
       "$mainMod,       E, exec, bemoji -cn"
       "$mainMod,       V, exec, cliphist list | $menu --dmenu | cliphist decode | wl-copy"
       "$mainMod,       B, exec, pkill -SIGUSR2 waybar"
@@ -85,10 +85,8 @@ in {
     ];
 
     # Move/resize windows with mainMod + LMB/RMB and dragging
-    bindm = [
-      "$mainMod, mouse:272, movewindow"
-      "$mainMod, mouse:273, resizewindow"
-    ];
+    bindm =
+      [ "$mainMod, mouse:272, movewindow" "$mainMod, mouse:273, resizewindow" ];
 
     # Laptop multimedia keys for volume and LCD brightness
     bindel = [

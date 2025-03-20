@@ -4,11 +4,12 @@
     ./bat.nix
     ./chromium.nix
     ./eza.nix
+    ./fish.nix
     ./git.nix
     ./hyprland
     ./lazygit.nix
     ./neovim.nix
-    ./obsidian.nix
+    #    ./obsidian.nix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
@@ -17,6 +18,8 @@
     ./waybar
     ./wofi
     ./zathura.nix
-    ./zsh.nix
+    #./zsh.nix
+
+    #./nm.nix
   ];
 }

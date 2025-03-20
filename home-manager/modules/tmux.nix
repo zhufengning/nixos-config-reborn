@@ -5,7 +5,7 @@
     mouse = true;
     escapeTime = 0;
     keyMode = "vi";
-    terminal = "screen-256color";
+    terminal = "tmux-256color";
     extraConfig = ''
       set -as terminal-features ",alacritty*:RGB"
       bind -n M-r source-file ~/.config/tmux/tmux.conf \; display "Reloaded!"
@@ -43,19 +43,20 @@
       bind -n M-q kill-window
       bind -n M-Q kill-session
     '';
-    plugins = with pkgs; [
-      tmuxPlugins.gruvbox
-      # {
-      #   plugin = tmuxPlugins.resurrect;
-      #   extraConfig = "set -g @resurrect-strategy-nvim 'session'";
-      # }
-      # {
-      #   plugin = tmuxPlugins.continuum;
-      #   extraConfig = ''
-      # set -g @continuum-restore 'on'
-      # set -g @continuum-save-interval '60' # minutes
-      #   '';
-      # }
-    ];
+    plugins = with pkgs;
+      [
+        tmuxPlugins.gruvbox
+        # {
+        #   plugin = tmuxPlugins.resurrect;
+        #   extraConfig = "set -g @resurrect-strategy-nvim 'session'";
+        # }
+        # {
+        #   plugin = tmuxPlugins.continuum;
+        #   extraConfig = ''
+        # set -g @continuum-restore 'on'
+        # set -g @continuum-save-interval '60' # minutes
+        #   '';
+        # }
+      ];
   };
 }

@@ -24,7 +24,7 @@ window#waybar {
   background: #d65d0e;
 }
 
-#clock, #battery, #pulseaudio, #tray, #language, #weather {
+#clock, #battery, #pulseaudio, #tray, #language, #weather, #backlight {
   padding: 0 10px;
   margin: 0 10px;
 }
@@ -69,4 +69,10 @@ window#waybar {
   margin: 0;
   color: #d65d0e;
   border-bottom: 5px solid #d65d0e;
+}
+
+#backlight {
+  margin: 0;
+  color: #fbffe1;
+  border-bottom: 5px solid #fbffe1;
 }

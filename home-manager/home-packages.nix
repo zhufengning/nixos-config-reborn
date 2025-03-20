@@ -5,16 +5,22 @@
     # Packages in each category are sorted alphabetically
 
     # Desktop apps
-    anki
-    code-cursor
+    # anki
+    # code-cursor
+    vscode
     imv
     mpv
     obs-studio
     obsidian
     pavucontrol
-    teams-for-linux
+    nixfmt
+    direnv
+    #    teams-for-linux
     telegram-desktop
-    vesktop
+    #    vesktop
+    firefox-devedition-bin
+    qq
+    wechat-uos
 
     # CLI utils
     bc
@@ -26,6 +32,7 @@
     fzf
     git-graph
     grimblast
+    grc
     htop
     hyprpicker
     ntfs3g
