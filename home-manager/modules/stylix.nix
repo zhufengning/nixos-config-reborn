@@ -13,12 +13,14 @@
     font-awesome
     powerline-fonts
     powerline-symbols
-    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
+    (nerdfonts.override {
+      fonts = [ "NerdFontsSymbolsOnly" "JetBrains Mono" "Hack" ];
+    })
   ];
 
   stylix = {
     enable = true;
-    polarity = "dark";
+    polarity = "light";
     base16Scheme =
       "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
 
@@ -67,10 +69,6 @@
       light = "Papirus-Light";
     };
 
-    image = pkgs.fetchurl {
-      url =
-        "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png";
-      sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc";
-    };
+    image = ../wallpaper.png;
   };
 }

@@ -4,12 +4,12 @@
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
     '';
-    loginShellInit = ''
-      if uwsm check may-start > /dev/null && uwsm select
-          exec systemd-cat -t uwsm_start uwsm start default
-      end'';
+    # loginShellInit = ''
+    #   if uwsm check may-start > /dev/null && uwsm select
+    #       exec systemd-cat -t uwsm_start uwsm start default
+    #   end'';
     shellInit = ''
-      if test -z "$TMUX" && test -n "$DISPLAY"
+      if test -z "$TMUX"  && test -n "$WAYLAND_DISPLAY"
           tmux attach-session -t default || tmux new-session -s default
       end'';
     plugins = [

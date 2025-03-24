@@ -1,1 +1,1 @@
-{ pkgs, ... }: { boot.kernelPackages = pkgs.linuxPackages_zen; }
+{ pkgs, ... }: { boot.kernelPackages = pkgs.linuxPackages_latest; }

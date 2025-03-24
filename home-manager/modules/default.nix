@@ -6,20 +6,20 @@
     ./eza.nix
     ./fish.nix
     ./git.nix
-    ./hyprland
+    #./hyprland
     ./lazygit.nix
     ./neovim.nix
     #    ./obsidian.nix
     ./ranger.nix
     ./starship.nix
-    ./stylix.nix
+    #./stylix.nix
     ./swaync
     ./tmux.nix
     ./waybar
     ./wofi
     ./zathura.nix
     #./zsh.nix
-
+    #./i3
     #./nm.nix
   ];
 }

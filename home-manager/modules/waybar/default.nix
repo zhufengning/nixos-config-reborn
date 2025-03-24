@@ -10,7 +10,7 @@
         modules-left = [ "hyprland/workspaces" ];
         modules-center = [ "hyprland/window" ];
         modules-right = [
-          "hyprland/language"
+          #"hyprland/language"
           # "custom/weather"
           "pulseaudio"
           "battery"

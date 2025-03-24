@@ -19,12 +19,14 @@ in {
 
   wayland.windowManager.hyprland.settings = {
     bind = [
-      "$mainMod SHIFT, Return, exec, $terminal"
+      "$mainMod,  Return, exec, $terminal"
       "$mainMod SHIFT, Q, killactive,"
       "$mainMod SHIFT, C, exit,"
       "$mainMod,       R, exec, $fileManager"
       "$mainMod,       F, togglefloating,"
       "$mainMod,       D, exec, $menu --show drun"
+      "$mainMod,       T, layoutmsg, orientationtop"
+      "$mainMod SHIFT, T, layoutmsg, orientationleft"
       "$mainMod,       P, pin,"
       "$mainMod,       J, togglegroup"
       "$mainMod,       E, exec, bemoji -cn"
@@ -80,8 +82,9 @@ in {
       "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
 
       # Scratchpad
-      "$mainMod,       S, togglespecialworkspace,  magic"
-      "$mainMod SHIFT, S, movetoworkspace, special:magic"
+      "$mainMod,       M, togglespecialworkspace,  magic"
+      "$mainMod SHIFT, M, movetoworkspace, special:magic"
+      #     "$mainMod SHIFT, S, exec, flameshot gui"
     ];
 
     # Move/resize windows with mainMod + LMB/RMB and dragging

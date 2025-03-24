@@ -1,3 +1,6 @@
+**经过几天的体验，我觉得NixOS这个东西用于桌面环境来说还是为时尚早**
+
+
 # ❄️ NixOS Config Reborn
 
 Welcome to my redesigned NixOS configuration built for efficiency and aesthetics. Right now I'm trying to commit something everyday. Let's see how long I can go.

@@ -2,7 +2,11 @@
   environment.systemPackages = with pkgs; [
     gcc
     kdenlive
-    networkmanagerapplet
+    #networkmanagerapplet
+    flatpak-builder
+    bridge-utils
+    wl-clipboard
+    #virtiofsd
     # jetbrains.pycharm-professional
     # jre8
     # qemu

@@ -5,7 +5,7 @@
     ./boot.nix
     ./env.nix
     ./home-manager.nix
-    ./hyprland.nix
+    ./graphics.nix
     ./kernel.nix
     ./mime.nix
     ./net.nix
@@ -18,5 +18,9 @@
     ./nvim.nix
     ./v2raya.nix
     ./fcitx5.nix
+    ./vbox.nix
+    ./flatpak.nix
+    ./ld.nix
+    ./ssh.nix
   ];
 }

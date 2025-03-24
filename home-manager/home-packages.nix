@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
+  fonts.fontconfig.enable = true;
 
   home.packages = with pkgs; [
     # Packages in each category are sorted alphabetically
@@ -8,25 +9,36 @@
     # anki
     # code-cursor
     vscode
-    imv
-    mpv
+    #imv
+    #mpv
     obs-studio
     obsidian
-    pavucontrol
+    #pavucontrol
     nixfmt
     direnv
     #    teams-for-linux
     telegram-desktop
     #    vesktop
     firefox-devedition-bin
-    qq
-    wechat-uos
+    file-roller
+    (pkgs.callPackage ./modules/jeb/default.nix {
+      jeb_home = "/home/zfn/Programs/JEB-5.16.0.202408261745_by_CXV";
+    })
+    (pkgs.callPackage ./modules/ida/ida.nix {
+      # Alternatively, fetch the installer through `fetchurl`, use a local path, etc.
+      runfile = /home/zfn/Programs/ida91/portable/linux;
+    })
+    #nautilus
+    #arandr
+    #autorandr
+    ghidra
+    cutter
 
     # CLI utils
     bc
     bottom
     brightnessctl
-    cliphist
+    #cliphist
     ffmpeg
     ffmpegthumbnailer
     fzf
@@ -47,15 +59,22 @@
     unzip
     w3m
     wget
-    wl-clipboard
     wtype
     yt-dlp
     zip
+    dex
+    superfile
+    yazi
+    fastfetch
+    xclip
+    xsel
 
     # Coding stuff
-    openjdk23
+    openjdk21
     nodejs
-    python311
+    python313
+    uv
+    swt
 
     # WM stuff
     libsForQt5.xwaylandvideobridge
@@ -66,5 +85,20 @@
     # Other
     bemoji
     nix-prefetch-scripts
+
+    dejavu_fonts
+    jetbrains-mono
+    noto-fonts
+    noto-fonts-lgc-plus
+
+    noto-fonts-cjk-sans
+    texlivePackages.hebrew-fonts
+    noto-fonts-emoji
+    font-awesome
+    powerline-fonts
+    powerline-symbols
+    (nerdfonts.override {
+      fonts = [ "NerdFontsSymbolsOnly" "JetBrainsMono" "Hack" ];
+    })
   ];
 }

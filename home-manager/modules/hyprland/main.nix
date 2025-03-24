@@ -13,7 +13,12 @@
         "XDG_SCREENSHOTS_DIR,$HOME/screens"
       ];
 
-      monitor = ",2880x1800@120,auto,2";
+      xwayland = {
+        enable = true;
+        force_zero_scaling = true;
+      };
+
+      monitor = [ "eDP-1,2880x1800@60,auto,2" "DP-1,1920x1080,auto,1.5" ];
       "$mainMod" = "SUPER";
       "$terminal" = "alacritty";
       "$fileManager" = "$terminal -e sh -c 'ranger'";
@@ -28,15 +33,15 @@
       ];
 
       general = {
-        gaps_in = 0;
-        gaps_out = 0;
+        gaps_in = 2;
+        gaps_out = 2;
 
-        border_size = 5;
+        border_size = 0;
 
         "col.active_border" = "rgba(d65d0eff) rgba(98971aff) 45deg";
         "col.inactive_border" = "rgba(3c3836ff)";
 
-        resize_on_border = true;
+        resize_on_border = false;
 
         allow_tearing = false;
         layout = "master";
@@ -46,11 +51,11 @@
         rounding = 0;
 
         active_opacity = 1.0;
-        inactive_opacity = 1.0;
+        inactive_opacity = 0.8;
 
         shadow = { enabled = false; };
 
-        blur = { enabled = false; };
+        blur = { enabled = true; };
       };
 
       animations = { enabled = false; };

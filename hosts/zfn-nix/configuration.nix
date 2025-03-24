@@ -1,4 +1,4 @@
-{ pkgs, stateVersion, hostname, ... }:
+{ pkgs, stateVersion, hostname, inputs, ... }:
 
 {
   imports =
@@ -9,5 +9,7 @@
   networking.hostName = hostname;
 
   system.stateVersion = stateVersion;
+  nixpkgs.config.allowUnfree = true;
+  networking.firewall.enable = false;
 }
 
